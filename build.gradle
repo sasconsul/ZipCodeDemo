@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'net.sasconsul'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+test {
+    useTestNG()
+}
+
+dependencies {
+// https://mvnrepository.com/artifact/com.breinify/brein-time-utilities
+    compile group: 'com.breinify', name: 'brein-time-utilities', version: '1.7.0'
+    testCompileOnly group: 'org.testng', name: 'testng', version: $/7.3.0/$
+
+    testImplementation('org.testng:testng:7.3.0')
+}
