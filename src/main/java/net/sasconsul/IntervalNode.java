@@ -83,4 +83,24 @@ public class IntervalNode {
         return ans;
     }
 
+
+    /**
+     * Flatten the tree into an ArrayList via in order traversal
+     * Usage: pass an empty ArrayList<Interval>
+     *
+     * @param ans
+     * @param node
+     * @return the flattened data
+     */
+    public static ArrayList<Interval> toArrayListLoop(ArrayList<Interval> ans, IntervalNode node) {
+        if (node == null) {
+            return ans;
+        } else {
+            ans.add(new Interval(node.start, node.end));
+        }
+        toArrayListRecurse(ans, node.left);
+        toArrayListRecurse(ans, node.right);
+        return ans;
+    }
+
 }
