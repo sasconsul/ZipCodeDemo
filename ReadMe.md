@@ -1,3 +1,4 @@
+This code was written over a weekend to satisfy an interview request, see the Problem_statement.md file. I haven't really touched it since then, but I've looked at it for other applications and re-coded it a little bit. 
 
 The ZipMerge::merge method is the only one completely implemented and passing tests.
 
